@@ -1,0 +1,36 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://8.137.9.22:3306/book_com?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: book_com
+    password: Tbaa4Effs7GtYGbt
+    type: com.zaxxer.hikari.HikariDataSource
+  jackson:
+    #设置时间格式
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  data:
+    redis:
+      host: 162.14.73.229
+      port: 6379
+
+
+
+#mybatis-plus:
+#  mapper-locations: classpath:mapper/*.xml
+
+  global-config:
+    db-config:
+      id-type: auto
+
+
+logging:
+  level:
+    com.hmdp: debug
+
+
+
